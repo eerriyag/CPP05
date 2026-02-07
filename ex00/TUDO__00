@@ -1,0 +1,57 @@
+Création → nom fixé 🔒 → plus jamais modifié
+throw = stop + signal d’erreur. try/catch = moyen de gérer ce signal.
+Stream is the idea of a path/channel for data transmission.
+
+1  ← meilleur grade
+...
+150 ← pire grade
+
+Interdit grade < 1 OR  grade > 150
+
+.hpp → déclaration
+.cpp → logique
+.hpp  → Promesses
+.cpp  → Réalisation
+
+
+Classe Bureaucrat
+   ↓
+Règles strictes
+   ↓
+Exceptions si erreur
+   ↓
+Sécurité + lisibilité
+
+
+Lire oui ✔️
+Modifier non ❌
+
+
+Schema  mantAL  FINAL: 
+
+Bureaucrat.hpp
+│
+├── Protection (#ifndef)
+├── Includes
+├── class Bureaucrat
+│   ├── private
+│   │   ├── name (const)
+│   │   ├── grade
+│   │   └── constructeur interdit
+│   ├── public
+│   │   ├── constructeurs
+│   │   ├── getters
+│   │   ├── increment / decrement
+│   │   └── exceptions
+└── operator<<
+
+throw ---> Lancer l'exception
+
+Grade invalide
+     ↓
+   throw   (Protéger l’objet pour qu’il ne soit jamais créé avec une valeur incorrecte.)
+     ↓
+  Exception
+     ↓
+   catch
+

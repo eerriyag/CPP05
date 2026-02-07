@@ -1,0 +1,28 @@
+Bureaucrat
+ ├── name (const)
+ ├── grade (1 → 150)
+ ├── increment / decrement
+ ├── signForm(Form)
+ ├── exceptions (High / Low)
+ └── operator <<
+
+
+throw Exception
+      ↓
+ catch (std::exception& e)
+      ↓
+   e.what() → "message"
+
+
+
+En très bref ✅ :
+
+#include "Bureaucrat.hpp" → importe tout le code de la classe Bureaucrat, tu peux l’utiliser complètement (fonctions, attributs, etc.) 📦
+
+class Bureaucrat; → forward declaration, juste préviens le compilateur que la classe existe ; tu ne peux l’utiliser qu’en pointeurs ou références ⚠️
+
+🧠 Mental :
+
+#include = je prends le livre entier 📚
+
+class Bureaucrat; = je dis juste “ce livre existe”
